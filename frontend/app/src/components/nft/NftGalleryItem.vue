@@ -111,7 +111,7 @@ export default defineComponent({
     );
 
     const imageUrl = computed(() => {
-      return item.value.imageUrl ?? require('@/assets/images/placeholder.svg');
+      return item.value.imageUrl ?? '/assets/images/placeholder.svg';
     });
 
     const isMediaVideo = computed(() => {

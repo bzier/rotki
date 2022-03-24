@@ -35,11 +35,11 @@ export default defineComponent({
 
     const icon = computed<string>(() => {
       if (identifier.value === 'cryptocompare') {
-        return require('@/assets/images/oracles/cryptocompare.png');
+        return '/assets/images/oracles/cryptocompare.png';
       } else if (identifier.value === 'coingecko') {
-        return require('@/assets/images/oracles/coingecko.svg');
+        return '/assets/images/oracles/coingecko.svg';
       } else if (identifier.value === 'manual') {
-        return require('@/assets/images/oracles/book.svg');
+        return '/assets/images/oracles/book.svg';
       }
       return '';
     });

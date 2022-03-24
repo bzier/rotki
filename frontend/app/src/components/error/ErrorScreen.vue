@@ -75,8 +75,6 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
-@import '~@/scss/scroll';
-
 .error-screen {
   height: 100%;
   width: 100%;

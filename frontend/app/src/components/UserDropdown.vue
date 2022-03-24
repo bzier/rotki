@@ -160,7 +160,7 @@ export default defineComponent({
     };
 
     const privacyModeIcon = computed<string>(() => {
-      return ['mdi-eye-off', 'mdi-eye-minus', 'mdi-eye'][privacyMode.value];
+      return ['mdi-eye', 'mdi-eye-minus', 'mdi-eye-off'][privacyMode.value];
     });
 
     return {

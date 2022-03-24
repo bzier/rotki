@@ -36,17 +36,17 @@ import { Routes } from '@/router/routes';
 const providers = [
   {
     route: Routes.DEFI_DEPOSITS_LIQUIDITY_UNISWAP,
-    icon: require('@/assets/images/defi/uniswap.svg'),
+    icon: '/assets/images/defi/uniswap.svg',
     text: i18n.t('liquidity.uniswap').toString()
   },
   {
     route: Routes.DEFI_DEPOSITS_LIQUIDITY_BALANCER,
-    icon: require('@/assets/images/defi/balancer.svg'),
+    icon: '/assets/images/defi/balancer.svg',
     text: i18n.t('liquidity.balancer').toString()
   },
   {
     route: Routes.DEFI_DEPOSITS_LIQUIDITY_SUSHISWAP,
-    icon: require('@/assets/images/modules/sushiswap.svg'),
+    icon: '/assets/images/modules/sushiswap.svg',
     text: i18n.t('liquidity.sushiswap').toString()
   }
 ];

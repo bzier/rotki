@@ -310,53 +310,53 @@ export const transactionEventProtocolData: ActionDataEntry[] = [
   {
     identifier: TransactionEventProtocol.COMPOUND,
     label: 'Compound',
-    image: require('@/assets/images/defi/compound.svg')
+    image: '/assets/images/defi/compound.svg'
   },
   {
     identifier: TransactionEventProtocol.GITCOIN,
     label: 'Gitcoin',
-    image: require('@/assets/images/gitcoin.svg')
+    image: '/assets/images/gitcoin.svg'
   },
   {
     identifier: TransactionEventProtocol.XDAI,
     label: 'Aave',
-    image: require('@/assets/images/defi/xdai.png')
+    image: '/assets/images/defi/xdai.png'
   },
   {
     identifier: TransactionEventProtocol.MAKERDAO,
     label: 'Makerdao',
-    image: require('@/assets/images/defi/makerdao.svg'),
+    image: '/assets/images/defi/makerdao.svg',
     matcher: (identifier: string) =>
       identifier.toLowerCase().startsWith('makerdao')
   },
   {
     identifier: TransactionEventProtocol.UNISWAP,
     label: 'Uniswap',
-    image: require('@/assets/images/defi/uniswap.svg'),
+    image: '/assets/images/defi/uniswap.svg',
     matcher: (identifier: string) =>
       identifier.toLowerCase().startsWith('uniswap')
   },
   {
     identifier: TransactionEventProtocol.AAVE,
     label: 'Aave',
-    image: require('@/assets/images/defi/aave.svg'),
+    image: '/assets/images/defi/aave.svg',
     matcher: (identifier: string) => identifier.toLowerCase().startsWith('aave')
   },
   {
     identifier: TransactionEventProtocol['1INCH'],
     label: '1inch',
-    image: require('@/assets/images/defi/1inch.svg'),
+    image: '/assets/images/defi/1inch.svg',
     matcher: (identifier: string) =>
       identifier.toLowerCase().startsWith('1inch')
   },
   {
     identifier: TransactionEventProtocol.ZKSYNC,
     label: 'zkSync',
-    image: require('@/assets/images/zksync.jpg')
+    image: '/assets/images/zksync.jpg'
   },
   {
     identifier: TransactionEventProtocol.VOTIUM,
     label: 'Votium',
-    image: require('@/assets/images/defi/votium.png')
+    image: '/assets/images/defi/votium.png'
   }
 ];
