@@ -15,6 +15,8 @@ module.exports = {
     '@vue/prettier'
   ],
 
+  ignorePatterns: ['.electron-builder.config.js'],
+
   parser: 'vue-eslint-parser',
 
   rules: {

@@ -81,13 +81,7 @@
 
 <script lang="ts">
 import { BigNumber } from '@rotki/common';
-import {
-  computed,
-  defineComponent,
-  PropType,
-  ref,
-  toRefs
-} from '@vue/composition-api';
+import { computed, defineComponent, ref, toRefs } from '@vue/composition-api';
 import { get, set, useClipboard, useTimeoutFn } from '@vueuse/core';
 import AmountCurrency from '@/components/display/AmountCurrency.vue';
 import { setupExchangeRateGetter } from '@/composables/balances';
@@ -106,18 +100,18 @@ export default defineComponent({
     AmountCurrency
   },
   props: {
-    value: { required: true, type: Object as PropType<BigNumber> },
+    value: { required: true, type: Object as () => BigNumber },
     loading: { required: false, type: Boolean, default: false },
     amount: {
       required: false,
-      type: Object as PropType<BigNumber>,
+      type: Object as () => BigNumber,
       default: null
     },
     fiatCurrency: { required: false, type: String, default: null },
     showCurrency: {
       required: false,
       default: 'none',
-      type: String as PropType<ShownCurrency>,
+      type: String as () => ShownCurrency,
       validator: (showCurrency: ShownCurrency) => {
         return shownCurrency.indexOf(showCurrency) > -1;
       }

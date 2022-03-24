@@ -5,6 +5,7 @@ import Vuetify from 'vuetify';
 import DefiWizard from '@/components/defi/wizard/DefiWizard.vue';
 import store from '@/store/store';
 import { DEFI_SETUP_DONE } from '@/types/frontend-settings';
+import { describe, expect } from 'vitest';
 import '../../../i18n';
 
 Vue.use(Vuetify);
